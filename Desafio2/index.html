@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Githubs Favorites</title>
+
+  <script src="./js/main.js" type="module" defer></script>
+</head>
+
+<body>
+  <div id="app">
+
+    <header>
+      <img src="./gitfav.svg" alt="" class="start">
+      <div class="search">
+        <label class="sr-only" for="input-search">Usuário do Github</label>
+        <input type="text" id="input-search" placeholder="Digite o Github username que quer favoritar">
+        <!-- <button><span class="start"><img src="./acendida.svg" alt=""></span> FAVORITAR</button> -->
+        <button><span>&star;</span> FAVORITAR</button>
+      </div>
+    </header>
+
+    <div class="arredonda" id="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th class="th1">User</th>
+            <th class="repositories">repositories</th>
+            <th class="followers">Followers</th>
+            <th class="action">Action</th>
+          </tr>
+        </thead>
+        <div>
+          <tbody>
+          </tbody>
+        </div>
+      </table>
+    </div>
+    <div class="kkk" class="arredonda">
+      <footer class="hide">
+        <img src='./estrela.svg' class='estrelaCinza'>
+        <h1>Nenhum favorito ainda!</h1>
+      </footer>
+    </div>
+
+  </div>
+</body>
+
+</html>
